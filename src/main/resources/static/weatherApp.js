@@ -9,7 +9,10 @@ var weatherApp = (function () {
                 console.log(cityInfo);
                 var obj = JSON.parse(cityInfo);
                 console.log(obj);
-                $("#tabla").find('tbody').append(cityInfo);
+                document.getElementById("demo").innerHTML = 
+                "<table><tr>" 
+                "name: " + obj.coord.lon +
+                "</tr></table>"
 
             });
 
